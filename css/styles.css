@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -29,28 +34,46 @@ nav ul li a {
 }
 
 main {
-    padding: 2em;
     text-align: center;
-    background-color: black;
-}
 
-.img-intro {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-}
-
-.rayo {
-    display: flex;
-    justify-content: start;
-    margin-bottom: 5px;
 }
 
 .intro {
+    background-image: url(/assets/img/fb1b7e3e2dfb6b7d7dbe6a17bb6be580.jpg);
+    background-size: cover;
     height: 100vh;
-    max-width: 800px;
-    margin: 0 auto;
-    color: black;
+    margin: auto;
+    color: white;
+    padding-top: 2em;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+
+    text-shadow: 2px 2px 5px black;
+
+}
+
+.intro p {
+    font-size: 1em;
+    font-weight: 700;
+    width: 600px;
+    margin: auto;
+    text-shadow: 3px 3px 2px black;
+}
+
+.cont-peliculas {}
+
+.peliculas {
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin: auto;
+    gap: 2em;
 }
 
 footer {
