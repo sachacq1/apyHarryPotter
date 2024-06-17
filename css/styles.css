@@ -8,7 +8,7 @@ body {
 header {
     background-color: #343a40;
     color: white;
-    padding: 1em 0;
+    padding: 10px 0;
 }
 
 nav ul {
@@ -16,6 +16,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 0;
+    margin: 0
 }
 
 nav ul li {
@@ -30,11 +31,26 @@ nav ul li a {
 main {
     padding: 2em;
     text-align: center;
+    background-color: black;
+}
+
+.img-intro {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.rayo {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5px;
 }
 
 .intro {
+    height: 100vh;
     max-width: 800px;
     margin: 0 auto;
+    color: black;
 }
 
 footer {
@@ -42,7 +58,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }
