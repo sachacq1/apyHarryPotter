@@ -47,13 +47,15 @@ main {
     padding-top: 2em;
 }
 
-h1 {
+h1,
+h2 {
     font-size: 3em;
     font-weight: 600;
     display: flex;
     justify-content: center;
-
+    color: white;
     text-shadow: 2px 2px 5px black;
+    padding-top: 20px;
 
 }
 
@@ -74,6 +76,61 @@ h1 {
     justify-content: center;
     margin: auto;
     gap: 2em;
+}
+
+.lasCasas {
+    background-image: url(/assets/img/patternCasas.jpg);
+    background-repeat: repeat;
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+.card-casas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    margin: auto;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.card-casas div {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 400px;
+    height: 90%;
+    display: inline-block;
+    margin: auto;
+}
+
+.card-casas img {
+    height: 40%;
+    width: 80%;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.card-casas p {
+    font-size: 1em;
+}
+
+.griffindor {
+    background-color: #831319ea;
+
+}
+
+.hufflepuff {
+    background-color: #fcec19;
+}
+
+.ravenclaw {
+    background-color: #1c1348;
+}
+
+.slytherin {
+    background-color: #3ea147;
 }
 
 footer {
