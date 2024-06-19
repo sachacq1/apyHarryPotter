@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(/assets/img/patterhrpwebp.webp);
+    background-image: url(/assets/img/patternHR2.jpg);
     background-size: 9cm;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -53,14 +53,15 @@ main {
 }
 
 h1,
-h2 {
-    font-size: 3em;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 5px black;
-    padding-top: 20px;
+h2,
+{
+font-size: 3em;
+font-weight: 600;
+display: flex;
+justify-content: center;
+color: white;
+text-shadow: 2px 2px 5px black;
+padding-top: 20px;
 
 }
 
@@ -72,7 +73,68 @@ h2 {
     text-shadow: 3px 3px 2px black;
 }
 
-.cont-peliculas {}
+
+
+.resumen {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 1em;
+    height: 100vh;
+
+
+}
+
+.resumen img {
+    width: 70%;
+    margin-top: 1em;
+    border-radius: 15px;
+}
+
+.resumen p {
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 3px gray;
+}
+
+.resumen div {
+    background-color: azure;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 80%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+h3 {
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.card-hogwarts {
+    background-image: url(/assets/img/b9e00052f8ed37d85e54fb109cb1b177.jpg);
+    background-size: contain;
+}
+
+.card-personajes {
+    background-image: url(/assets/img/hv.jpg);
+    background-size: contain;
+}
+
+.card-peliculas {
+    background-image: url(/assets/img/peliculas.jog.jpg);
+    background-size: contain;
+}
+
 
 .peliculas {
     width: 500px;
@@ -149,5 +211,5 @@ footer {
     padding: 1em 0;
     /* position: fixed; */
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
 }
