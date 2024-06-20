@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,6 +21,7 @@ header {
     background-color: #343a40;
     color: white;
     padding: 10px 0;
+    width: 100%;
 }
 
 nav ul {
@@ -47,7 +48,7 @@ main {
 
 .intro {
     background-image: url(/assets/img/fb1b7e3e2dfb6b7d7dbe6a17bb6be580.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     height: 100vh;
     margin: auto;
@@ -70,7 +71,7 @@ h2 {
 .intro p {
     font-size: 1em;
     font-weight: 700;
-    width: 600px;
+    width: 70%;
     margin: auto;
     text-shadow: 3px 3px 2px black;
 }
@@ -108,7 +109,8 @@ h2 {
     background-color: azure;
     border: 2px solid black;
     border-radius: 15px;
-    height: 50%;
+
+    height: 400px;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -229,11 +231,11 @@ h3 {
 .test {
     background-image: url(/assets/img/mesa.jpg);
     background-size: cover;
-    width: 40%;
-    height: 700px;
+    width: 70%;
+    min-height: 100vh;
     display: inline-block;
     margin: 20px auto;
-    padding: 15px;
+    padding: 10px 5px;
     border-radius: 15px;
     box-shadow: 3px 3px 15px black;
 
@@ -244,7 +246,7 @@ h3 {
     border-radius: 10px;
     background-color: rgba(168, 167, 167, 0.466);
     margin: 10px auto;
-    width: 80%;
+    width: 70%;
     height: 40%;
 
 }
@@ -263,10 +265,6 @@ h3 {
     font-size: 14px;
     font-weight: 700;
     text-shadow: 2px 2px 3px rgb(82, 80, 80);
-}
-
-test label {
-    font-size: 10px;
 }
 
 .juegos {
@@ -326,4 +324,41 @@ footer {
     /* position: fixed; */
     width: 100%;
     /* bottom: 0; */
+}
+
+@media (max-width: 880px) {
+
+    .resumen,
+    .peliculas,
+    #grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-casas div {
+        display: inline-block;
+    }
+
+    .test {
+        width: 80%;
+
+    }
+}
+
+@media (max-width: 480px) {
+
+    .resumen,
+    .peliculas,
+    #grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    .card-casas div {
+        display: inline-block;
+    }
+
+    .test {
+        width: 90%;
+
+    }
 }
