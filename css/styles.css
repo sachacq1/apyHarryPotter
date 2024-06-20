@@ -53,15 +53,14 @@ main {
 }
 
 h1,
-h2,
-{
-font-size: 3em;
-font-weight: 600;
-display: flex;
-justify-content: center;
-color: white;
-text-shadow: 2px 2px 5px black;
-padding-top: 20px;
+h2 {
+    font-size: 2.5em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    padding-top: 20px;
 
 }
 
@@ -202,6 +201,79 @@ h3 {
 
 .slytherin {
     background-color: #3ea1469f;
+}
+
+.test {
+    background-image: url(/assets/img/mesa.jpg);
+    background-size: cover;
+    width: 40%;
+    height: 700px;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px black;
+
+}
+
+.test div {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(168, 167, 167, 0.466);
+    margin: 10px auto;
+    width: 80%;
+    height: 40%;
+
+}
+
+.test h2 {
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    padding-top: 5px;
+}
+
+.test p {
+    font-size: 14px;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px rgb(82, 80, 80);
+}
+
+test label {
+    font-size: 10px;
+}
+
+.juegos {
+    height: 100vh;
+    margin: 10px;
+}
+
+#grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+#grid div {
+    border: 2px solid black;
+    width: 60%;
+    height: 400px;
+    padding: 10px;
+    margin: 5px;
+    display: grid;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.562);
+}
+
+#grid div img {
+    width: 80%;
+    margin: auto;
 }
 
 footer {

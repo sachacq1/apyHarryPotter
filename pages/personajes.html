@@ -23,15 +23,20 @@
     <main>
         <section class="characters">
             <h1>Personajes</h1>
-            <div class="grid">
-                <!-- Aquí se insertarán las tarjetas de los personajes dinámicamente -->
-            </div>
+            <form id="form">
+                <input type="text" id="input" placeholder="Buscar personaje..." autocomplete="off" />
+                <button type="submit">Buscar</button>
+                <div id="grid">
+                    <!-- Aquí se insertarán las tarjetas de los personajes dinámicamente -->
+                </div>
+            </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Proyecto Harry Potter. Todos los derechos reservados.</p>
     </footer>
+    <script src="/js/personajes.js"></script>
 </body>
 
 </html>

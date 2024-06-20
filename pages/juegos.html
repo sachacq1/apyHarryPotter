@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personajes - Proyecto Harry Potter</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/pages/index.html">Inicio</a></li>
+                <li><a href="/pages/personajes.html">Personajes</a></li>
+                <li><a href="/pages/peliculas.html">Peliculas</a></li>
+                <li><a href="/pages/casas.html">Casas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="test">
+            <h2>Test de Casa de Harry Potter</h1>
+                <form id="form">
+                    <div>
+                        <p>Pregunta 1: ¿Qué cualidad valoras más?</p>
+                        <input type="radio" id="q1a1" name="q1" value="valentía">
+                        <label for="q1a1">Valentía</label><br>
+                        <input type="radio" id="q1a2" name="q1" value="inteligencia">
+                        <label for="q1a2">Inteligencia</label><br>
+                        <input type="radio" id="q1a3" name="q1" value="lealtad">
+                        <label for="q1a3">Lealtad</label><br>
+                        <input type="radio" id="q1a4" name="q1" value="ambición">
+                        <label for="q1a4">Ambición</label><br>
+                    </div>
+
+                    <div>
+                        <p>Pregunta 2: ¿Cuál es tu color favorito?</p>
+                        <input type="radio" id="q2a1" name="q2" value="rojo">
+                        <label for="q2a1">Rojo</label><br>
+                        <input type="radio" id="q2a2" name="q2" value="azul">
+                        <label for="q2a2">Azul</label><br>
+                        <input type="radio" id="q2a3" name="q2" value="amarillo">
+                        <label for="q2a3">Amarillo</label><br>
+                        <input type="radio" id="q2a4" name="q2" value="verde">
+                        <label for="q2a4">Verde</label><br>
+                    </div>
+
+                    <div>
+                        <p>Pregunta 3: ¿Cuál es tu actividad preferida?</p>
+                        <input type="radio" id="q3a1" name="q3" value="aventuras">
+                        <label for="q3a1">Aventuras</label><br>
+                        <input type="radio" id="q3a2" name="q3" value="lectura">
+                        <label for="q3a2">Lectura</label><br>
+                        <input type="radio" id="q3a3" name="q3" value="ayudar">
+                        <label for="q3a3">Ayudar a los demás</label><br>
+                        <input type="radio" id="q3a4" name="q3" value="liderar">
+                        <label for="q3a4">Liderar</label><br>
+                    </div>
+
+                    <div>
+                        <p>Pregunta 4: ¿Qué animal prefieres?</p>
+                        <input type="radio" id="q4a1" name="q4" value="león">
+                        <label for="q4a1">León</label><br>
+                        <input type="radio" id="q4a2" name="q4" value="águila">
+                        <label for="q4a2">Águila</label><br>
+                        <input type="radio" id="q4a3" name="q4" value="tejón">
+                        <label for="q4a3">Tejón</label><br>
+                        <input type="radio" id="q4a4" name="q4" value="serpiente">
+                        <label for="q4a4">Serpiente</label><br>
+                    </div>
+
+                    <div>
+                        <p>Pregunta 5: ¿Qué asignatura de Hogwarts te gusta más?</p>
+                        <input type="radio" id="q5a1" name="q5" value="defensa">
+                        <label for="q5a1">Defensa Contra las Artes Oscuras</label><br>
+                        <input type="radio" id="q5a2" name="q5" value="encantamientos">
+                        <label for="q5a2">Encantamientos</label><br>
+                        <input type="radio" id="q5a3" name="q5" value="herbología">
+                        <label for="q5a3">Herbología</label><br>
+                        <input type="radio" id="q5a4" name="q5" value="pociones">
+                        <label for="q5a4">Pociones</label><br>
+                    </div>
+                    <button type="button" id="button" onclick="calculateHouse()">Descubre tu Casa</button>
+                    <h2 id="result"></h2>
+                </form>
+
+
+
+        </section>
+
+        <div class="juegos">
+            <h1>Juegos</h1>
+            <iframe width="90%" height="90%" frameborder="0"
+                src="https://juegos.net/game.php?id_juego=19880&id_dominio=10&code=2vbvbc6vb9vcdve6d276ed82vb8v8e4c"
+                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Proyecto Harry Potter. Todos los derechos reservados.</p>
+    </footer>
+    <script src="/js/test.js"></script>
+</body>
+
+</html>
